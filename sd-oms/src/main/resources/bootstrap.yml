@@ -1,0 +1,18 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 9186
+  connection-timeout: 50000ms
+#  servlet:
+#    context-path: /sd-oms
+
+spring:
+  application:
+    name: sd-oms
+  # 环境 dev|test|prod
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
